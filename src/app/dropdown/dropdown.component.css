@@ -1,0 +1,16 @@
+.boxDrop{
+  display: grid;
+  width: 500px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background: rgb(237, 241, 241);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 50px );
+-webkit-backdrop-filter: blur( 50px );
+border-radius: 5px;
+}
+
+.tituloDrop{
+  align-items: center;
+}
