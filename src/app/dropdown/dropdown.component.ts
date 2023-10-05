@@ -58,13 +58,7 @@ export class DropdownComponent{
 
 }
 
-  apareceDisplay(){
-    this.display="aparece";
-  }
-
-  desapareceDisplay(){
-    this.display="desaparece";
-  }
+  
 
   clickButton(){
     this.marca = this.telefones.find((x) => x.id == this.select1)?.name

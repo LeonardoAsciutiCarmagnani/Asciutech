@@ -6,17 +6,27 @@ import { AppComponent } from './app.component';
 import { ImageComponentComponent } from './image-component/image-component.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 
+
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TesteComponent } from './teste/teste.component';
+import { MatMenuModule } from '@angular/material/menu';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     ImageComponentComponent,
-    DropdownComponent
+    DropdownComponent,
+    TesteComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
