@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Contato</h1>
+  <h4>Informe o aparelho para atualizar o estoque</h4>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input [(ngModel)]="nome" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" >
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input [(ngModel)]="email"type="email" name="nome" class="form-control" id="email" placeholder="Digite seu email">
+    </div>
+    <div class="form-group">
+      <label for="celular">Modelo</label>
+      <input [(ngModel)]="celular"  name="nome" class="form-control" id="celular" placeholder="Informe o modelo">
+    </div>
+    <button type="submit" class="btn btn-primary " (click)="chamadaBackPost()">Enviar</button>
+    <button type="submit" class="btn btn-primary " (click)="chamadaBack()">Contatar</button>
+
+  </form>
+
+  <div class="textEmails">
+  <h3>Se preferir, contate nossa equipe por e-mail!</h3>
+  </div>
+  <div class="emails">
+    <ul class="emailData">
+  <li href="">{{val[1].email}}</li>
+  <li href="">{{val[2].email}}</li>
+  <li href="">{{val[3].email}}</li>
+  <li href="">{{val[4].email}}</li>
+    </ul>
+  </div>
+</div>

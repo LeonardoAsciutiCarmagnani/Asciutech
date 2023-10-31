@@ -1,83 +1,20 @@
-<div class="body">
-   <div class="boxTitulo">
+  <div class="boxTitulo">
     <div class="logo">
-         <img class="imagemT"src="../assets/fotos/tecnologia.png" alt="">
-         <h1 class="titulo">Asciutech</h1>
+       <img class="imagemT"src="../assets/fotos/tecnologia.png" alt="">
+       <h1 class="titulo">Asciutech</h1>
     </div>
-  </div>
 
-    <!-- <button mat-button [matMenuTriggerFor]="menu">Selecione a página</button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item routerLink="/test" routerLinkActive="active">Teste do input e lista</button>
-        <button mat-menu-item routerLink="/itemdropdown" routerLinkActive="active">Dropdown</button>
-        <button mat-menu-item routerLink="/" routerLinkActive="active">Inicio</button>
-      </mat-menu>
-
-<router-outlet></router-outlet> -->
-
-   <div class="textOfertas">
-   <p class="text">
-    OFERTAS
-   </p>
-  </div>
-
-   <div class="cardsFotos">
-      <div class="card1 cards">
-        <img src="../assets/fotos/s23_ultra.jpg" alt="" class="imageCard">
-        <div class="rodape">
-          <p class="nomeProduto">S23 ULTRA</p>
-          <p class="gigas">512 GB</p>
-
-        </div>
-      </div>
-
-      <div class="card2 cards">
-        <img src="../assets/fotos/S22.jpg" alt="" class="imageCard">
-        <div class="rodape">
-          <div class="produtos">
-              <p class="nomeProduto">S22 ULTRA</p>
-              <p class="gigas">256 GB</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card3 cards">
-        <img src="../assets/fotos/iphone_xr.jpg" alt="" class="imageCard">
-        <div class="rodape">
-          <p class="nomeProduto">IPHONE XR</p>
-          <p class="gigas">128 GB</p>
-        </div>
-      </div>
-
-      <div class="card4 cards">
-        <img src="../assets/fotos/IPHONE12.jpeg" alt="" class="imageCard">
-        <div class="rodape">
-          <p class="nomeProduto">IPHONE 12</p>
-          <p class="gigas">64 GB</p>
-        </div>
-      </div>
-
-      <div class="card5 cards">
-        <img src="../assets/fotos/Motorola-Moto-G80.jpg" alt="" class="imageCard">
-
-        <div class="rodape">
-          <p class="nomeProduto">MOTOROLA G40</p>
-          <p class="gigas">128 GB</p>
-        </div>
-      </div>
-   </div>
-
-   <div class="boxDropdown">
-    <div class="dropdown">
-     <app-dropdown> </app-dropdown>
+      <nav class="navegation">
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/ofertas" routerLinkActive="active">Ofertas</a>
+        <a routerLink="/dropdown" routerLinkActive="active">Consultar valores</a>
+        <a routerLink="/contato" routerLinkActive="active">Contato </a>
+      </nav>
     </div>
-   </div>
 
-   <footer>
-    <p>Asciutech ©</p>
-   </footer>
+<section class="router-outlet">
+  <router-outlet></router-outlet>
+</section>
 
-  </div>
-
-
+<footer>Asciutech ©</footer>
 

@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown',
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.css']
 })
-export class DropdownComponent{
+export class DropdownComponent implements OnInit {
 
   celulares: any = [];
   marca: any = [];
@@ -46,6 +46,7 @@ export class DropdownComponent{
 
   constructor(){}
   ngOnInit(){
+
     this.select1 = 0;
     this.celulares = this.telefones.filter((x) => x.id == this.select1)[0].celulares
     this.precos = this.telefones.find((x) => x.id == this.select1)?.precos;
@@ -58,7 +59,7 @@ export class DropdownComponent{
 
 }
 
-  
+
 
   clickButton(){
     this.marca = this.telefones.find((x) => x.id == this.select1)?.name
